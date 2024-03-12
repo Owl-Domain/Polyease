@@ -33,6 +33,7 @@
     <Company>OwlDomain</Company>
 
     <PackageReadmeFile>readme.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/Owl-Domain/Polyease</PackageProjectUrl>
   </PropertyGroup>
 
   <!-- Readme -->
