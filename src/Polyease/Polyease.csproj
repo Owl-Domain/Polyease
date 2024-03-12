@@ -2,7 +2,7 @@
   
   <!-- Project -->
   <PropertyGroup Label="project">
-    <TargetFrameworks>netstandard2.1;netcoreapp3.0;net5.0;net7.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.1; netcoreapp3.0; net5.0; net7.0</TargetFrameworks>
     <LangVersion>12</LangVersion>
     <Nullable>enable</Nullable>
 
@@ -10,9 +10,10 @@
     <RootNamespace>OwlDomain.Polyease</RootNamespace>
 
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Deterministic>true</Deterministic>
   </PropertyGroup>
 
-  <!-- Nuget Package -->
+  <!-- Nuget package -->
   <PropertyGroup Label="nuget">
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     
@@ -22,7 +23,7 @@
     <Title>OwlDomain.Polyease</Title>
     <Description>
       A polyfill-like package that is focused on making it easier to work around missing features, 
-      rather than provide hacky attempts at implementing the features.
+      rather than provide hacky attempts at implementing them.
     </Description>
     <PackageTags>owldomain, polyease, polyfill</PackageTags>
     
@@ -30,6 +31,20 @@
 
     <Authors>Owl Domain, Nightowl</Authors>
     <Company>OwlDomain</Company>
+
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <!-- Readme -->
+  <ItemGroup Label="readme">
+    <None Include="readme.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <!-- Repository -->
+  <PropertyGroup Label="repository">
+    <RepositoryType>git</RepositoryType>
+    <RepositoryBranch>master</RepositoryBranch>
+    <RepositoryUrl>https://github.com/Owl-Domain/Polyease</RepositoryUrl>
   </PropertyGroup>
   
 </Project>
