@@ -15,7 +15,8 @@ the attribute class in order to make multi-targeting easier.
 
 ## Installation
 
-To use this package download the latest release files, and add them to a 
+To use this package download the [latest release files](https://github.com/Owl-Domain/Polyease/releases/tag/v1.0.0),
+and add them to a 
 [local NuGet feed](https://learn.microsoft.com/en-us/nuget/hosting-packages/local-feeds),
 after that you can reference it from your .NET project.
 An official [nuget.org](https://www.nuget.org/) package will be released at a later point in time.
