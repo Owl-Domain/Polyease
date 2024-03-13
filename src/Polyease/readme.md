@@ -5,6 +5,12 @@ A polyfill-like package that is focused on making it easier to work around missi
 rather than provide hacky attempts at implementing them. The main purpose of this is to
 make it easier to write multi-targeting libraries.
 
+An example of the spirit of this library is the 
+[CallerArgumentExpressionAttribute](https://learn.microsoft.com/dotnet/api/system.runtime.compilerservices.callerargumentexpressionattribute),
+under normal usage, the compiler provides the expression that was passed in for a different parameter as a string,
+some polyfill libraries try to imitate that behaviour, however this library will only provide a replica of
+the attribute class in order to make multi-targeting easier.
+
 
 
 ## Installation
