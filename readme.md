@@ -69,6 +69,8 @@ as the poly-eased features are placed in the same namespaces as the official ver
   officially available in [.NET 7.0/later](https://apisof.net/catalog/614f9e38-2ac6-c5f5-386e-b2174c657505).
 - [CallerArgumentExpressionAttribute](https://learn.microsoft.com/dotnet/api/system.runtime.compilerservices.callerargumentexpressionattribute) -
   officially available in [.NET Core 3.0/later and .NET 5.0/later](https://apisof.net/catalog/9ca9576d-3b89-a8a5-b1d0-95c096bb5378).
+- [StringSyntaxAttribute](https://learn.microsoft.com/dotnet/api/system.diagnostics.codeanalysis.stringsyntaxattribute) -
+  officially available in [.NET 7.0/later](https://apisof.net/catalog/c0079be5-561c-a967-1ae8-385348a32fb9).
 
 
 
