@@ -15,9 +15,9 @@ the attribute class in order to make multi-targeting easier.
 
 ## Installation
 
-For the best results, use [multi-targeting](https://learn.microsoft.com/en-us/dotnet/standard/frameworks) 
+For the best results, use [multi-targeting](https://learn.microsoft.com/dotnet/standard/frameworks) 
 in your project, and then use 
-[conditional expressions](https://learn.microsoft.com/en-us/visualstudio/msbuild/msbuild-conditions)
+[conditional expressions](https://learn.microsoft.com/visualstudio/msbuild/msbuild-conditions)
 to ensure that the package is only referenced when necessary.
 
 In C#, that would look like this:
@@ -47,3 +47,13 @@ However using the conditional expressions helps to keep your dependencies clean.
 
 To use this package in your code, simply reference it, nothing else specific has to be done in order to use it,
 as the poly-eased features are placed in the same namespaces as the official versions.
+
+
+
+## License
+
+This project (the source, and the release files, e.t.c) are not currently under any license, 
+all rights are reserved, however it will become more permissive at a later date.
+
+Parts of this project are copied / derived under the MIT license from the *.NET Foundation and 
+Contributors*, you can read their full license [here](/license-dotnet.md).

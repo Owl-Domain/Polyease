@@ -17,7 +17,7 @@ the attribute class in order to make multi-targeting easier.
 
 To use this package download the [latest release files](https://github.com/Owl-Domain/Polyease/releases/tag/v1.1.0),
 and add them to a 
-[local NuGet feed](https://learn.microsoft.com/en-us/nuget/hosting-packages/local-feeds),
+[local NuGet feed](https://learn.microsoft.com/nuget/hosting-packages/local-feeds),
 after that you can reference it from your .NET project.
 An official [nuget.org](https://www.nuget.org/) package will be released at a later point in time.
 
@@ -28,9 +28,9 @@ In C#, that would look like this:
 </ItemGroup>
 ```
 
-For the best results, use [multi-targeting](https://learn.microsoft.com/en-us/dotnet/standard/frameworks) 
+For the best results, use [multi-targeting](https://learn.microsoft.com/dotnet/standard/frameworks) 
 in your project, and then use 
-[conditional expressions](https://learn.microsoft.com/en-us/visualstudio/msbuild/msbuild-conditions)
+[conditional expressions](https://learn.microsoft.com/visualstudio/msbuild/msbuild-conditions)
 to ensure that the package is only referenced when necessary.
 
 In C#, that would look like this:
@@ -85,8 +85,8 @@ concern / suggestion has already been raised.
 
 ## License
 
-This project is not currently under any license, all rights are reserved, however it will become more
-permissive at a later date.
+This project (the source, and the release files, e.t.c) are not currently under any license, 
+all rights are reserved, however it will become more permissive at a later date.
 
 Parts of this project are copied / derived under the MIT license from the *.NET Foundation and 
 Contributors*, you can read their full license [here](/license-dotnet.md).
