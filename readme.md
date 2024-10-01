@@ -15,16 +15,15 @@ the attribute class in order to make multi-targeting easier.
 
 ## Installation
 
-To use this package download the [latest release files](https://github.com/Owl-Domain/Polyease/releases/tag/v1.3.0),
+To use this package either download the [latest release files](https://github.com/Owl-Domain/Polyease/releases/tag/v1.3.1),
 and add them to a 
-[local NuGet feed](https://learn.microsoft.com/nuget/hosting-packages/local-feeds),
-after that you can reference it from your .NET project.
-An official [nuget.org](https://www.nuget.org/) package will be released at a later point in time.
+[local NuGet feed](https://learn.microsoft.com/nuget/hosting-packages/local-feeds), or use the latest 
+[nuget.org](https://www.nuget.org/packages/OwlDomain.Polyease/) release, then just reference it from your .NET project. 
 
 In C#, that would look like this:
 ```csproj
 <ItemGroup>
-  <PackageReference Include="OwlDomain.Polyease" Version="1.3.0" />
+  <PackageReference Include="OwlDomain.Polyease" Version="1.3.1" />
 </ItemGroup>
 ```
 
@@ -40,7 +39,7 @@ In C#, that would look like this:
 </PropertyGroup>
 
 <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.1'">
-  <PackageReference Include="OwlDomain.Polyease" Version="1.3.0" />
+  <PackageReference Include="OwlDomain.Polyease" Version="1.3.1" />
 </ItemGroup>
 ```
 
