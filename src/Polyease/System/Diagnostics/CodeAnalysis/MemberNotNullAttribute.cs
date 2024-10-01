@@ -1,4 +1,4 @@
-﻿/* This file was copied / derived under the following license:
+/* This file was copied / derived under the following license:
  * 
  * Licensed to the .NET Foundation under one or more agreements.
  * The .NET Foundation licenses this file to you under the MIT license.
@@ -19,6 +19,16 @@ namespace System.Diagnostics.CodeAnalysis;
 [AttributeUsage(AttributeTargets.Method | AttributeTargets.Property, Inherited = false, AllowMultiple = true)]
 public sealed class MemberNotNullAttribute : Attribute
 {
+   #region Properties
+   /// <summary>Gets field or property member names.</summary>
+   /// <remarks><b>
+   ///   This is a stub provided by the <see href="https://github.com/Owl-Domain/Polyease">OwlDomain.Polyease</see> package.<br/>
+   ///   The actual implementation is only provided in .NET 5.0/later.
+   ///</b></remarks>
+   public string[] Members { get; }
+   #endregion
+
+   #region Constructors
    /// <summary>Initializes the attribute with a field or property member.</summary>
    /// <param name="member">
    /// The field or property member that is promised to be not-null.
@@ -38,13 +48,7 @@ public sealed class MemberNotNullAttribute : Attribute
    ///   The actual implementation is only provided in .NET 5.0/later.
    ///</b></remarks>
    public MemberNotNullAttribute(params string[] members) => Members = members;
-
-   /// <summary>Gets field or property member names.</summary>
-   /// <remarks><b>
-   ///   This is a stub provided by the <see href="https://github.com/Owl-Domain/Polyease">OwlDomain.Polyease</see> package.<br/>
-   ///   The actual implementation is only provided in .NET 5.0/later.
-   ///</b></remarks>
-   public string[] Members { get; }
+   #endregion
 }
 
 #endif
