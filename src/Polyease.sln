@@ -13,9 +13,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "misc", "misc", "{68C0AE0C-6
 	ProjectSection(SolutionItems) = preProject
 		..\.gitattributes = ..\.gitattributes
 		..\.gitignore = ..\.gitignore
-		..\contributing.md = ..\contributing.md
-		..\license-dotnet.md = ..\license-dotnet.md
-		..\license.md = ..\license.md
 		..\readme.md = ..\readme.md
 	EndProjectSection
 EndProject

@@ -27,7 +27,7 @@
     </Description>
     <PackageTags>owldomain, polyease, polyfill</PackageTags>
     
-    <Version>1.3.1</Version>
+    <Version>1.3.2</Version>
 
     <Authors>Owl Domain, Nightowl</Authors>
     <Company>OwlDomain</Company>
@@ -35,6 +35,8 @@
     <PackageReadmeFile>readme.md</PackageReadmeFile>
     <PackageProjectUrl>https://github.com/Owl-Domain/Polyease</PackageProjectUrl>
     <PackageLicenseFile>license.md</PackageLicenseFile>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageIconUrl>https://github.com/Owl-Domain/Polyease/blob/master/icon.png?raw=true</PackageIconUrl>
   </PropertyGroup>
 
   <!-- Resources -->
@@ -42,6 +44,7 @@
     <None Include="readme.md" Pack="true" PackagePath="\" />
     <None Include="../../license.md" Pack="true" PackagePath="\" />
     <None Include="../../license-dotnet.md" Pack="true" PackagePath="\" />
+    <None Include="../../icon.png" Pack="true" PackagePath="\" />
   </ItemGroup>
 
   <!-- Repository -->
