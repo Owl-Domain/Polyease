@@ -27,7 +27,7 @@ In C#, that would look like this:
 </PropertyGroup>
 
 <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.1'">
-  <PackageReference Include="OwlDomain.Polyease" Version="1.3.0" />
+  <PackageReference Include="OwlDomain.Polyease" Version="1.3.1" />
 </ItemGroup>
 ```
 
