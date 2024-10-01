@@ -75,6 +75,8 @@ as the poly-eased features are placed in the same namespaces as the official ver
   officially available in [.NET 5.0/later](https://apisof.net/catalog/200dc3dadc94a608b8305ad2f5498281).
 - [MemberNotNullWhenAttribute](https://learn.microsoft.com/dotnet/api/system.diagnostics.codeanalysis.membernotnullwhenattribute) -
   officially available in [.NET 5.0/later](https://apisof.net/catalog/8b00bdca113a146a7a5a79f2ef1c7fc9).
+- [StackTraceHiddenAttribute](https://learn.microsoft.com/dotnet/api/system.diagnostics.stacktracehiddenattribute) -
+  officially available in [.NET 6.0/later](https://apisof.net/catalog/5cc02aab35e14fcf5d358e958a777443).
 
 
 
