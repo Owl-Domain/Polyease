@@ -1,4 +1,4 @@
-﻿/* This file was copied / derived under the following license:
+/* This file was copied / derived under the following license:
  * 
  * Licensed to the .NET Foundation under one or more agreements.
  * The .NET Foundation licenses this file to you under the MIT license.
@@ -16,45 +16,7 @@ namespace System.Diagnostics.CodeAnalysis;
 [AttributeUsage(AttributeTargets.Parameter | AttributeTargets.Field | AttributeTargets.Property, AllowMultiple = false, Inherited = false)]
 public sealed class StringSyntaxAttribute : Attribute
 {
-   /// <summary>Initializes the <see cref="StringSyntaxAttribute"/> with the identifier of the syntax used.</summary>
-   /// <param name="syntax">The syntax identifier.</param>
-   /// <remarks><b>
-   ///   This is a stub provided by the <see href="https://github.com/Owl-Domain/Polyease">OwlDomain.Polyease</see> package.<br/>
-   ///   The actual implementation is only provided in .NET 7.0/later.
-   ///</b></remarks>
-   public StringSyntaxAttribute(string syntax)
-   {
-      Syntax = syntax;
-      Arguments = [];
-   }
-
-   /// <summary>Initializes the <see cref="StringSyntaxAttribute"/> with the identifier of the syntax used.</summary>
-   /// <param name="syntax">The syntax identifier.</param>
-   /// <param name="arguments">Optional arguments associated with the specific syntax employed.</param>
-   /// <remarks><b>
-   ///   This is a stub provided by the <see href="https://github.com/Owl-Domain/Polyease">OwlDomain.Polyease</see> package.<br/>
-   ///   The actual implementation is only provided in .NET 7.0/later.
-   ///</b></remarks>
-   public StringSyntaxAttribute(string syntax, params object?[] arguments)
-   {
-      Syntax = syntax;
-      Arguments = arguments;
-   }
-
-   /// <summary>Gets the identifier of the syntax used.</summary>
-   /// <remarks><b>
-   ///   This is a stub provided by the <see href="https://github.com/Owl-Domain/Polyease">OwlDomain.Polyease</see> package.<br/>
-   ///   The actual implementation is only provided in .NET 7.0/later.
-   ///</b></remarks>
-   public string Syntax { get; }
-
-   /// <summary>Optional arguments associated with the specific syntax employed.</summary>
-   /// <remarks><b>
-   ///   This is a stub provided by the <see href="https://github.com/Owl-Domain/Polyease">OwlDomain.Polyease</see> package.<br/>
-   ///   The actual implementation is only provided in .NET 7.0/later.
-   ///</b></remarks>
-   public object?[] Arguments { get; }
-
+   #region Constants
    /// <summary>The syntax identifier for strings containing composite formats for string formatting.</summary>
    /// <remarks><b>
    ///   This is a stub provided by the <see href="https://github.com/Owl-Domain/Polyease">OwlDomain.Polyease</see> package.<br/>
@@ -138,6 +100,50 @@ public sealed class StringSyntaxAttribute : Attribute
    ///   The actual implementation is only provided in .NET 7.0/later.
    ///</b></remarks>
    public const string Xml = nameof(Xml);
+   #endregion
+
+   #region Properties
+   /// <summary>Gets the identifier of the syntax used.</summary>
+   /// <remarks><b>
+   ///   This is a stub provided by the <see href="https://github.com/Owl-Domain/Polyease">OwlDomain.Polyease</see> package.<br/>
+   ///   The actual implementation is only provided in .NET 7.0/later.
+   ///</b></remarks>
+   public string Syntax { get; }
+
+   /// <summary>Optional arguments associated with the specific syntax employed.</summary>
+   /// <remarks><b>
+   ///   This is a stub provided by the <see href="https://github.com/Owl-Domain/Polyease">OwlDomain.Polyease</see> package.<br/>
+   ///   The actual implementation is only provided in .NET 7.0/later.
+   ///</b></remarks>
+   public object?[] Arguments { get; }
+   #endregion
+
+   #region Constructors
+   /// <summary>Initializes the <see cref="StringSyntaxAttribute"/> with the identifier of the syntax used.</summary>
+   /// <param name="syntax">The syntax identifier.</param>
+   /// <remarks><b>
+   ///   This is a stub provided by the <see href="https://github.com/Owl-Domain/Polyease">OwlDomain.Polyease</see> package.<br/>
+   ///   The actual implementation is only provided in .NET 7.0/later.
+   ///</b></remarks>
+   public StringSyntaxAttribute(string syntax)
+   {
+      Syntax = syntax;
+      Arguments = [];
+   }
+
+   /// <summary>Initializes the <see cref="StringSyntaxAttribute"/> with the identifier of the syntax used.</summary>
+   /// <param name="syntax">The syntax identifier.</param>
+   /// <param name="arguments">Optional arguments associated with the specific syntax employed.</param>
+   /// <remarks><b>
+   ///   This is a stub provided by the <see href="https://github.com/Owl-Domain/Polyease">OwlDomain.Polyease</see> package.<br/>
+   ///   The actual implementation is only provided in .NET 7.0/later.
+   ///</b></remarks>
+   public StringSyntaxAttribute(string syntax, params object?[] arguments)
+   {
+      Syntax = syntax;
+      Arguments = arguments;
+   }
+   #endregion
 }
 
 #endif
