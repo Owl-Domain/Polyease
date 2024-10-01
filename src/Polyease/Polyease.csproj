@@ -34,11 +34,14 @@
 
     <PackageReadmeFile>readme.md</PackageReadmeFile>
     <PackageProjectUrl>https://github.com/Owl-Domain/Polyease</PackageProjectUrl>
+    <PackageLicenseFile>license.md</PackageLicenseFile>
   </PropertyGroup>
 
-  <!-- Readme -->
-  <ItemGroup Label="readme">
+  <!-- Resources -->
+  <ItemGroup Label="resources">
     <None Include="readme.md" Pack="true" PackagePath="\" />
+    <None Include="../../license.md" Pack="true" PackagePath="\" />
+    <None Include="../../license-dotnet.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
   <!-- Repository -->
