@@ -27,7 +27,7 @@ In a C# project (a .csproj file) that would look like this:
 
 ```csproj
 <ItemGroup>
-  <PackageReference Include="OwlDomain.Polyease" Version="1.3.3" />
+  <PackageReference Include="OwlDomain.Polyease" Version="1.3.4" />
 </ItemGroup>
 ```
 
@@ -44,7 +44,7 @@ In C#, that would look like this:
 </PropertyGroup>
 
 <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.1'">
-  <PackageReference Include="OwlDomain.Polyease" Version="1.3.3" />
+  <PackageReference Include="OwlDomain.Polyease" Version="1.3.4" />
 </ItemGroup>
 ```
 

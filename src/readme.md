@@ -5,7 +5,7 @@ A polyfill-like package that is focused on making it easier to work around missi
 rather than provide hacky attempts at implementing them. The main purpose of this is to
 make it easier to write multi-targeting libraries.
 
-An example of the spirit of this library is the 
+An example of the spirit of this library is the
 [CallerArgumentExpressionAttribute](https://learn.microsoft.com/dotnet/api/system.runtime.compilerservices.callerargumentexpressionattribute),
 under normal usage, the compiler provides the expression that was passed in for a different parameter as a string,
 some polyfill libraries try to imitate that behaviour, however this library will only provide a replica of
@@ -14,19 +14,20 @@ the attribute class in order to make multi-targeting easier.
 
 ## Installation
 
-For the best results, use [multi-targeting](https://learn.microsoft.com/dotnet/standard/frameworks) 
-in your project, and then use 
+For the best results, use [multi-targeting](https://learn.microsoft.com/dotnet/standard/frameworks)
+in your project, and then use
 [conditional expressions](https://learn.microsoft.com/visualstudio/msbuild/msbuild-conditions)
 to ensure that the package is only referenced when necessary.
 
 In C#, that would look like this:
+
 ```csproj
 <PropertyGroup>
   <TargetFrameworks>netstandard2.1; net7.0</TargetFrameworks>
 </PropertyGroup>
 
 <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.1'">
-  <PackageReference Include="OwlDomain.Polyease" Version="1.3.3" />
+  <PackageReference Include="OwlDomain.Polyease" Version="1.3.4" />
 </ItemGroup>
 ```
 
@@ -51,5 +52,5 @@ as the poly-eased features are placed in the same namespaces as the official ver
 
 This project (the source, and the release files, e.t.c) is release under the [OwlDomain License](/license.md).
 
-Parts of this project are copied / derived under the MIT license from the *.NET Foundation and 
+Parts of this project are copied / derived under the MIT license from the *.NET Foundation and
 Contributors*, you can read their full license [here](/license-dotnet.md).
