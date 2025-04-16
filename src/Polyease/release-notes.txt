@@ -1,0 +1,3 @@
+v1.3.3 [16-04-2025]:
+	- Added release notes.
+	- Updated package to match the new OwlDomain style.
