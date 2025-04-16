@@ -1,4 +1,4 @@
-﻿Polyease
+Polyease
 ===
 
 A polyfill-like package that is focused on making it easier to work around missing features,
@@ -10,7 +10,6 @@ An example of the spirit of this library is the
 under normal usage, the compiler provides the expression that was passed in for a different parameter as a string,
 some polyfill libraries try to imitate that behaviour, however this library will only provide a replica of
 the attribute class in order to make multi-targeting easier.
-
 
 
 ## Installation
@@ -27,7 +26,7 @@ In C#, that would look like this:
 </PropertyGroup>
 
 <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.1'">
-  <PackageReference Include="OwlDomain.Polyease" Version="1.3.2" />
+  <PackageReference Include="OwlDomain.Polyease" Version="1.3.3" />
 </ItemGroup>
 ```
 
@@ -42,12 +41,10 @@ uses conditional compilation to ensure that the poly-eased features are only pre
 However using the conditional expressions helps to keep your dependencies clean.
 
 
-
 ## Usage
 
 To use this package in your code, simply reference it, nothing else specific has to be done in order to use it,
 as the poly-eased features are placed in the same namespaces as the official versions.
-
 
 
 ## License

@@ -14,6 +14,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "misc", "misc", "{68C0AE0C-6
 		..\.gitattributes = ..\.gitattributes
 		..\.gitignore = ..\.gitignore
 		..\readme.md = ..\readme.md
+		..\license.md = ..\license.md
+		..\contributing.md = ..\contributing.md
+		..\playground_fix.sh = ..\playground_fix.sh
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{218B6F35-38A8-8894-4A45-A70D6B0063B3}"
+	ProjectSection(SolutionItems) = preProject
+		..\.github\workflows\package.yml = ..\.github\workflows\package.yml
+		..\.github\workflows\test.yml = ..\.github\workflows\test.yml
+		..\.github\workflows\build.yml = ..\.github\workflows\build.yml
+		..\.github\workflows\update_editorconfig.yml = ..\.github\workflows\update_editorconfig.yml
 	EndProjectSection
 EndProject
 Global

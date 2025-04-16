@@ -1,45 +1,50 @@
-Polyease
-===
+# OwlDomainPolyease
+
+[<img src="https://img.shields.io/nuget/v/OwlDomain.Polyease?logo=nuget" alt="nuget.org package version">](https://www.nuget.org/packages/OwlDomain.Polyease)
+[![Build](https://github.com/Owl-Domain/Polyease/actions/workflows/build.yml/badge.svg)](https://github.com/Owl-Domain/Polyease/actions/workflows/build.yml)
+[![Test](https://github.com/Owl-Domain/Polyease/actions/workflows/test.yml/badge.svg)](https://github.com/Owl-Domain/Polyease/actions/workflows/test.yml)
+[![Package](https://github.com/Owl-Domain/Polyease/actions/workflows/package.yml/badge.svg)](https://github.com/Owl-Domain/Polyease/actions/workflows/package.yml)
+
+---
 
 A polyfill-like package that is focused on making it easier to work around missing features,
 rather than provide hacky attempts at implementing them. The main purpose of this is to
 make it easier to write multi-targeting libraries.
 
-An example of the spirit of this library is the 
+An example of the spirit of this library is the
 [CallerArgumentExpressionAttribute](https://learn.microsoft.com/dotnet/api/system.runtime.compilerservices.callerargumentexpressionattribute),
 under normal usage, the compiler provides the expression that was passed in for a different parameter as a string,
 some polyfill libraries try to imitate that behaviour, however this library will only provide a replica of
 the attribute class in order to make multi-targeting easier.
 
 
-
 ## Installation
 
-To use this package either download the [latest release files](https://github.com/Owl-Domain/Polyease/releases/tag/v1.3.2),
-and add them to a 
-[local NuGet feed](https://learn.microsoft.com/nuget/hosting-packages/local-feeds), or use the latest 
-[nuget.org](https://www.nuget.org/packages/OwlDomain.Polyease/) release, then just reference it from your .NET project. 
+To use this package simply reference it from your .NET project, which will download the specified
+version from the [nuget.org](https://www.nuget.org/packages/OwlDomain.Polyease) source.
 
-In C#, that would look like this:
+In a C# project (a .csproj file) that would look like this:
+
 ```csproj
 <ItemGroup>
-  <PackageReference Include="OwlDomain.Polyease" Version="1.3.2" />
+  <PackageReference Include="OwlDomain.Polyease" Version="1.3.3" />
 </ItemGroup>
 ```
 
-For the best results, use [multi-targeting](https://learn.microsoft.com/dotnet/standard/frameworks) 
-in your project, and then use 
+For the best results, use [multi-targeting](https://learn.microsoft.com/dotnet/standard/frameworks)
+in your project, and then use
 [conditional expressions](https://learn.microsoft.com/visualstudio/msbuild/msbuild-conditions)
 to ensure that the package is only referenced when necessary.
 
 In C#, that would look like this:
+
 ```csproj
 <PropertyGroup>
   <TargetFrameworks>netstandard2.1; net7.0</TargetFrameworks>
 </PropertyGroup>
 
 <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.1'">
-  <PackageReference Include="OwlDomain.Polyease" Version="1.3.2" />
+  <PackageReference Include="OwlDomain.Polyease" Version="1.3.3" />
 </ItemGroup>
 ```
 
@@ -54,12 +59,10 @@ uses conditional compilation to ensure that the poly-eased features are only pre
 However using the conditional expressions helps to keep your dependencies clean.
 
 
-
 ## Usage
 
 To use this package in your code, simply reference it, nothing else specific has to be done in order to use it,
 as the poly-eased features are placed in the same namespaces as the official versions.
-
 
 
 ## Currently poly-eased
@@ -78,19 +81,17 @@ as the poly-eased features are placed in the same namespaces as the official ver
   officially available in [.NET 6.0/later](https://apisof.net/catalog/5cc02aab35e14fcf5d358e958a777443).
 
 
-
 ## Contributions
 
-Code contributions will not be accepted, however feel free to provide feedback / suggestions 
-by creating a [new issue](https://github.com/Owl-Domain/Polyease/issues/new), or look at 
+Code contributions will not be accepted, however feel free to provide feedback / suggestions
+by creating a [new issue](https://github.com/Owl-Domain/Polyease/issues/new), or look at
 the [existing issues](https://github.com/Owl-Domain/Polyease/issues?q=) to see if your
 concern / suggestion has already been raised.
-
 
 
 ## License
 
 This project (the source, and the release files, e.t.c) is release under the [OwlDomain License](/license.md).
 
-Parts of this project are copied / derived under the MIT license from the *.NET Foundation and 
+Parts of this project are copied / derived under the MIT license from the *.NET Foundation and
 Contributors*, you can read their full license [here](/license-dotnet.md).
