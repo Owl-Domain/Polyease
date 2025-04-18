@@ -91,7 +91,7 @@ concern / suggestion has already been raised.
 
 ## License
 
-This project (the source, and the release files, e.t.c) is release under the [OwlDomain License](/license.md).
+This project (the source, and the release files, e.t.c) is released under the [OwlDomain License](/license.md).
 
 Parts of this project are copied / derived under the MIT license from the *.NET Foundation and
 Contributors*, you can read their full license [here](/license-dotnet.md).
