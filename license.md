@@ -1,4 +1,4 @@
-# OwlDomain License 1.0.1
+# OwlDomain License 1.0.2
 
 ## Acceptance
 
@@ -12,9 +12,9 @@ The licensor grants you a copyright license for the
 software to do everything you might do with the software
 that would otherwise infringe the licensor's copyright
 in it for any permitted purpose. However, you may
-only distribute the software according to [Distribution
+only distribute the software according to the [Distribution
 License](#distribution-license) and make changes or new works
-based on the software according to [Changes and New Works
+based on the software according to the [Changes and New Works
 License](#changes-and-new-works-license).
 
 ## Distribution License
@@ -28,13 +28,13 @@ License](#changes-and-new-works-license).
 ## Notices
 
 You must ensure that anyone who gets a copy of any part of
-the software from you also gets a copy of these terms or the
-as well as copies of any plain-text lines beginning with
+the software from you also gets a copy of these terms as
+well as copies of any plain-text lines beginning with
 `Required Notice:` that the licensor provided with the software.
 
 For example:
 
-> Required Notice: Copyright Yoyodyne, Inc. (http://example.com)
+> Required Notice: OwlDomain (https://github.com/Owl-Domain/)
 
 ## Changes and New Works License
 
