@@ -20,6 +20,8 @@ jobs:
 
       - name: Check that the release exists.
         run: gh release view ${{ github.ref_name }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   publish_packages:
     needs: ensure_release
