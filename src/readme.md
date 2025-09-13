@@ -23,11 +23,11 @@ In C#, that would look like this:
 
 ```csproj
 <PropertyGroup>
-  <TargetFrameworks>netstandard2.1; net7.0</TargetFrameworks>
+  <TargetFrameworks>net7.0;netstandard2.1</TargetFrameworks>
 </PropertyGroup>
 
 <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.1'">
-  <PackageReference Include="OwlDomain.Polyease" Version="1.3.4" />
+  <PackageReference Include="OwlDomain.Polyease" Version="1.3.5" />
 </ItemGroup>
 ```
 

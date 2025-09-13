@@ -1,10 +1,18 @@
 # OwlDomainPolyease
 
-[<img src="https://img.shields.io/nuget/v/OwlDomain.Polyease?logo=nuget" alt="nuget.org package version">](https://www.nuget.org/packages/OwlDomain.Polyease)
-[![Build](https://github.com/Owl-Domain/Polyease/actions/workflows/build.yml/badge.svg)](https://github.com/Owl-Domain/Polyease/actions/workflows/build.yml)
-[![Test](https://github.com/Owl-Domain/Polyease/actions/workflows/test.yml/badge.svg)](https://github.com/Owl-Domain/Polyease/actions/workflows/test.yml)
-[![Package](https://github.com/Owl-Domain/Polyease/actions/workflows/package.yml/badge.svg)](https://github.com/Owl-Domain/Polyease/actions/workflows/package.yml)
+<!-- Do not put the link/image nested tags on new lines as that will count the links as having whitespace which changes the rendering -->
 
+<p align="center"> <!-- Project -->
+  <a title="A link to the latest version of the main NuGet package for the project." href="https://www.nuget.org/packages/OwlDomain.Polyease"><img alt="A status badge of the main Nuget package for the project." src="https://img.shields.io/nuget/v/OwlDomain.Polyease?logo=nuget"></a>
+  <a title="A link to the Github action workflow for building the project." href="https://github.com/Owl-Domain/Polyease/actions/workflows/build.yml"><img alt="A status badge of the Github action workflow for building the project." src="https://github.com/Owl-Domain/Polyease/actions/workflows/build.yml/badge.svg"></a>
+  <a title="A link to the Github action workflow for testing the project." href="https://github.com/Owl-Domain/Polyease/actions/workflows/test.yml"><img alt="A status badge of the Github action workflow for testing the project." src="https://github.com/Owl-Domain/Polyease/actions/workflows/test.yml/badge.svg"></a>
+  <a title="A link to the Github action workflow for linting the project." href="https://github.com/Owl-Domain/Polyease/actions/workflows/lint.yml"><img alt="A status badge of the Github action workflow for linting the project." src="https://github.com/Owl-Domain/Polyease/actions/workflows/lint.yml/badge.svg"></a>
+  <a title="A link to the Github action workflow for publishing the project." href="https://github.com/Owl-Domain/Polyease/actions/workflows/publish.yml"><img alt="A status badge of the Github action workflow for publishing the project." src="https://github.com/Owl-Domain/Polyease/actions/workflows/publish.yml/badge.svg"></a>
+</p>
+
+<p align="center"> <!-- Organisation -->
+  <a title="A link to the OwlDomain Discord server." href="https://discord.gg/JtXMeqVGQc"><img alt="Status badge for the OwlDomain discord server." src="https://img.shields.io/discord/1411024983550853162?style=social&logo=discord&label=discord&link=https%3A%2F%2Fdiscord.gg%2FJtXMeqVGQc"></a>
+</p>
 ---
 
 A polyfill-like package that is focused on making it easier to work around missing features,
@@ -27,7 +35,7 @@ In a C# project (a .csproj file) that would look like this:
 
 ```csproj
 <ItemGroup>
-  <PackageReference Include="OwlDomain.Polyease" Version="1.3.4" />
+  <PackageReference Include="OwlDomain.Polyease" Version="1.3.5" />
 </ItemGroup>
 ```
 
@@ -40,11 +48,11 @@ In C#, that would look like this:
 
 ```csproj
 <PropertyGroup>
-  <TargetFrameworks>netstandard2.1; net7.0</TargetFrameworks>
+  <TargetFrameworks>net7.0;netstandard2.1</TargetFrameworks>
 </PropertyGroup>
 
 <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.1'">
-  <PackageReference Include="OwlDomain.Polyease" Version="1.3.4" />
+  <PackageReference Include="OwlDomain.Polyease" Version="1.3.5" />
 </ItemGroup>
 ```
 
