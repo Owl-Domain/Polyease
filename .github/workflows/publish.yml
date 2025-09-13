@@ -13,9 +13,9 @@ jobs:
 
     steps:
       - name: Ensure workflow run is happening for a tag.
-        if: ${{ github.ref_type }} != "tag"
+        if: ${{ github.ref_type }} != tag
         run: |
-          echo "Workflowing is running for a '${{ github.ref_type }}' ref instead of for a tag."
+          echo "Workflowing is running for a '${{ github.ref_type }}' ref instead of a tag."
           exit 1
 
       - name: Check that the release exists.
