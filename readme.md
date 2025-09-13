@@ -13,6 +13,7 @@
 <p align="center"> <!-- Organisation -->
   <a title="A link to the OwlDomain Discord server." href="https://discord.gg/JtXMeqVGQc"><img alt="Status badge for the OwlDomain discord server." src="https://img.shields.io/discord/1411024983550853162?style=social&logo=discord&label=discord&link=https%3A%2F%2Fdiscord.gg%2FJtXMeqVGQc"></a>
 </p>
+
 ---
 
 A polyfill-like package that is focused on making it easier to work around missing features,
