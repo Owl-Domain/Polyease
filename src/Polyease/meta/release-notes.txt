@@ -1,3 +1,6 @@
+v1.3.6 [13-09-2025]:
+	- No changes, new build system is being tested.
+
 v1.3.5 [06-05-2025]:
 	- Wording tweaks to the license.
 

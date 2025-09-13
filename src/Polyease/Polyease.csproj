@@ -8,7 +8,7 @@
 
 		<AssemblyName>OwlDomain.Polyease</AssemblyName>
 		<RootNamespace>OwlDomain.Polyease</RootNamespace>
-		<Version>1.3.5</Version>
+		<Version>1.3.6</Version>
 
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<Deterministic>true</Deterministic>
