@@ -19,7 +19,7 @@ jobs:
           exit 1
 
       - name: Check that the release exists.
-        run: gh release view ${{ github.ref_name }}
+        run: gh release view --repo ${{ github.repositoryUrl }} ${{ github.ref_name }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
