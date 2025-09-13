@@ -1,0 +1,26 @@
+name: Publish .NET solution
+
+permissions:
+  contents: write
+
+on:
+  workflow_dispatch:
+
+jobs:
+  ensure_release:
+    runs-on: ubuntu-latest
+    name: Ensure that a release exists.
+
+    steps:
+      - name: Ensure workflow run is happening for a tag.
+        if: ${{ github.ref_type }} != "tag"
+        run: exit 1
+
+      - name: Check that the release exists.
+        run: gh release view ${{ github.ref_name }}
+
+  publish_packages:
+    needs: ensure_release
+    uses: Owl-Domain/.github/.github/workflows/dotnet_package_publish.yml@master
+    with:
+      tag-name: ${{ github.ref_name }}
