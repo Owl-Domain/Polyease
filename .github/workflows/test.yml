@@ -1,4 +1,4 @@
-name: Test .NET solution
+name: test
 
 permissions:
   contents: read

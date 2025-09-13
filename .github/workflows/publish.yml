@@ -1,4 +1,4 @@
-name: Publish .NET solution
+name: publish
 
 permissions:
   contents: write

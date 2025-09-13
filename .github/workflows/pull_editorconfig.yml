@@ -1,4 +1,4 @@
-name: Update .editorconfig file
+name: update .editorconfig
 
 permissions:
   contents: write
