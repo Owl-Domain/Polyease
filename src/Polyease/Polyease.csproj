@@ -12,9 +12,6 @@
 
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<Deterministic>true</Deterministic>
-
-		<RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
-		<NuGetLockFilePath>../packages.lock.json</NuGetLockFilePath>
 	</PropertyGroup>
 
 	<!-- NuGet package -->
