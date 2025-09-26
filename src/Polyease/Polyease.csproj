@@ -23,7 +23,7 @@
 		<Copyright>Copyright (c) OwlDomain $([System.DateTime]::UtcNow.Year)</Copyright>
 
 		<RepositoryUrl>https://github.com/Owl-Domain/Polyease.git</RepositoryUrl>
-		<PackageProjectUrl>https://www.github.com/Owl-Domain/Polyease</ProjectUrl>
+		<PackageProjectUrl>https://www.github.com/Owl-Domain/Polyease</PackageProjectUrl>
 
 		<PackageReadmeFile>readme.md</PackageReadmeFile>
 		<PackageIcon>icon.png</PackageIcon>
