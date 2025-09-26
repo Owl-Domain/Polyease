@@ -8,7 +8,7 @@
 
 		<AssemblyName>OwlDomain.Polyease</AssemblyName>
 		<RootNamespace>OwlDomain.Polyease</RootNamespace>
-		<Version>1.3.6</Version>
+		<Version>1.3.7</Version>
 
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<Deterministic>true</Deterministic>
@@ -22,8 +22,8 @@
 		<Authors>OwlDomain</Authors>
 		<Copyright>Copyright (c) OwlDomain $([System.DateTime]::UtcNow.Year)</Copyright>
 
-		<ProjectUrl>https://www.github.com/Owl-Domain/Polyease</ProjectUrl>
 		<RepositoryUrl>https://github.com/Owl-Domain/Polyease.git</RepositoryUrl>
+		<PackageProjectUrl>https://www.github.com/Owl-Domain/Polyease</ProjectUrl>
 
 		<PackageReadmeFile>readme.md</PackageReadmeFile>
 		<PackageIcon>icon.png</PackageIcon>
